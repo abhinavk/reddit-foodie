@@ -1,3 +1,7 @@
 # IDE workspace folders
 .idea
 .vscode
+
+# Intermediate
+__pycache__
+.pyc

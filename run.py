@@ -1,5 +1,5 @@
 import argparse
-from redditfoodie import foodie
+from reddit import foodie
 
 rf_parser = argparse.ArgumentParser(description='Reddit Foodie')
 rf_parser.add_argument('-v', '--verbose', action='store_true',
