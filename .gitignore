@@ -5,3 +5,6 @@
 # Intermediate
 __pycache__
 .pyc
+
+# Runtime excludes
+saves

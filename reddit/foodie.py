@@ -45,8 +45,11 @@ def main():
     existing_links = getSavedLinks() # Set of names of already saved files
 
     for post in posts:
-        if post.name not in existing_links:
-            pprint('Downloading image ' + str(post.serialno))
+        serial = str(post.serialno + 1)
+        if post.name in existing_links:
+            pprint('Downloading image ' + serial + '...Found cached copy')
+        else:
+            pprint('Downloading image ' + serial)
             downloadLink(post)
 
 
